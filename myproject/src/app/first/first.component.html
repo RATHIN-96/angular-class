@@ -1,0 +1,13 @@
+
+INTERPOLATION <h1>{{title}}</h1>
+PROPERTY BINDING <input type="text" [value]="name"><br>
+EVENT BINDING <input type="text" #fname> 
+<button (click)="display(fname.value)">Click</button>
+<br><h2>Hello {{event}}{{uname}}</h2><br>
+
+<input type="text" [(ngModel)]="uname">
+
+
+
+
+<p>first works!</p>

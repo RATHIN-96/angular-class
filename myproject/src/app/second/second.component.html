@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second com</title>
+</head>
+<body>
+    <h1 style="color: blue;">Second Component </h1>
+
+    <div style="padding-left: 25%;">
+
+        <div *ngIf="x; else y ">Welcome To Angular</div> <hr>
+
+        <ng-template #y> Condition False </ng-template>
+
+
+    </div>
+
+    <h1 style="text-align: center; color: darkgoldenrod;">STRUCTURAL DIRECTVES</h1>
+
+    <div style="text-align: center; display: flex; justify-content: center;">
+        <table style="width: 30%; "border= "2px;">
+            <tr>
+                <th>last</th>
+                <th>first</th>
+                <th>odd</th>
+                <th>even</th>
+                <th>index</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Place</th>
+            </tr>
+            <tr *ngFor="let i of user;index as in; even as e ; odd as o ; first as f; last as l ">
+                <td>{{l}}</td>
+                <td>{{f}}</td>
+                <td>{{o}}</td>
+                <td>{{e}}</td>
+                <td>{{in}}</td>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.place}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div [ngSwitch]="d"  style="text-align: center; font-size: 30PX ; color: red; text-shadow: 1px 1px 2px black;">
+        <h2 *ngSwitchCase="1">MONDAY</h2>
+        <h2 *ngSwitchCase="2">TUESDAY</h2>
+        <h2 *ngSwitchCase="3">WEDNESDAY</h2>
+        <h2 *ngSwitchCase="4">THURSDAY</h2>
+        <h2 *ngSwitchCase="5">FRIDAY</h2>
+        <h2 *ngSwitchCase="6">SATURDAY</h2>
+        <h2 *ngSwitchCase="7">SUNDAY</h2>
+        <h2 *ngSwitchDefault>Invalid !</h2>
+
+
+    </div>
+
+    <h1  style="text-align: center; color: darkgoldenrod;">ATTRIBUTE DIRECTVES</h1>
+
+    <div style="text-align: center; font-size: 60px; text-shadow: 2px 2px 4px black;">
+        
+    <h2 [ngStyle]="{'color':'cyan'}">Welcome To Angular </h2>
+    <h2 [ngStyle]="{'color':color1}">Welcome To Angular </h2>
+    
+    </div>
+</body>
+</html>
