@@ -7,13 +7,17 @@ import { HeaderComponent } from './header/header.component';
 import { FirstComponent } from './first/first.component';
 import { FormsModule } from '@angular/forms';
 import { SecondComponent } from './second/second.component';
+import { HighliteDirective } from './highlite.directive';
+import { ThirdComponent } from './third/third.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    HighliteDirective,
+    ThirdComponent
   ],
   imports: [
     BrowserModule,

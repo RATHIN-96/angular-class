@@ -21,7 +21,7 @@
 
     <div style="text-align: center; display: flex; justify-content: center;">
         <table style="width: 30%; "border= "2px;">
-            <tr>
+            <tr style="color: rgb(0, 0, 255);">
                 <th>last</th>
                 <th>first</th>
                 <th>odd</th>
@@ -59,11 +59,32 @@
 
     <h1  style="text-align: center; color: darkgoldenrod;">ATTRIBUTE DIRECTVES</h1>
 
-    <div style="text-align: center; font-size: 60px; text-shadow: 2px 2px 4px black;">
+    <div style="text-align: center; font-size: 50px; text-shadow: 2px 2px 4px black;">
         
     <h2 [ngStyle]="{'color':'cyan'}">Welcome To Angular </h2>
-    <h2 [ngStyle]="{'color':color1}">Welcome To Angular </h2>
-    
+    <h2 [ngStyle]="{'color':color1}">Ng Style </h2>
+
+
+    </div>
+    <div>
+
+            <h2 [ngClass]="{'highlight':is_highlited}">Ng Class</h2>
+
+            <h3 [ngClass]="'style'">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, animi officiis est quasi veniam quidem </h3>
+
+            <button (click)="toogle()">ngClass styling directives Directly</button>
+
+
+    </div>
+
+
+    <div>
+        <h1 [appHighlite]="''"> Welcome To Highlight directives</h1>
+
+        <h1 [appHighlite]="'Darkgreen'">Welcome To Highlight directives</h1>
+
+        <h1 appHighlite>Hello world</h1>
+        
     </div>
 </body>
 </html>
