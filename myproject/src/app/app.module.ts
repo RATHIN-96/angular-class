@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { SecondComponent } from './second/second.component';
 import { HighliteDirective } from './highlite.directive';
 import { ThirdComponent } from './third/third.component';
+import { SamplepipePipe } from './samplepipe.pipe';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { ThirdComponent } from './third/third.component';
     FirstComponent,
     SecondComponent,
     HighliteDirective,
-    ThirdComponent
+    ThirdComponent,
+    SamplepipePipe,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

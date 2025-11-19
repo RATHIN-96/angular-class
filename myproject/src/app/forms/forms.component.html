@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1 style="color: red; text-align: center;">TEMPLATE DRIVEN FORMS</h1>
+
+    <div class="container ">
+        <form #userForm="ngForm" (ngSubmit)="onsubmit(userForm.value)">
+
+            <label for="">NAME</label><br>
+            <input type="text" name="name" class="form-control" [(ngModel)]="user.name" required #nameRef="ngModel">
+            <span *ngIf="nameRef.invalid && nameRef.touched" style="color: red;">
+                NAME MUST BE FILLED OUT !
+            </span><br>
+
+            <label for="">EMAIL</label><br>
+            <input type="email" name="email" class="form-control" [(ngModel)]="user.email" required >
+
+            <label for="">AGE</label><br>
+            <input type="number"  name="age" class="form-control" [(ngModel)]="user.age" required> <br>
+
+            <input type="submit" class=" btn btn-outline-danger form-control" [disabled]="userForm.invalid">
+        </form>
+        <br>
+
+        <h3 *ngIf="submitted" style="text-align: center;">Form Submitted ! Name:{{user.name}},Email:{{user.email}},Age:{{user.age}}</h3>
+        
+
+
+    </div>
+    
+</body>
+</html>
