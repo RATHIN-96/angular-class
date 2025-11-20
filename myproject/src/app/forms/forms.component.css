@@ -1,0 +1,11 @@
+
+body{
+background: linear-gradient(252deg,rgba(63, 251, 229, 1) 21%, rgb(145, 219, 251) 100%);
+}
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+}
+h1{
+    text-shadow: 2px 2px 4px rgb(55, 55, 55);
+}

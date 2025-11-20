@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <h1 style="color: red; text-align: center;">TEMPLATE DRIVEN FORMS</h1>
+    <h1 style="color: red; text-align: center;">TEMPLATE DRIVEN FORMS</h1><hr>
 
     <div class="container ">
         <form #userForm="ngForm" (ngSubmit)="onsubmit(userForm.value)">
@@ -33,6 +33,49 @@
 
 
     </div>
+
+
+
+    <!-- REACTIVE FORM -->
+
+    <h1 style="color: red; text-align:center;"> REACTIVE FORMS</h1><hr>
+
+    <div class="container">
+
+        <form [formGroup]="reactform" (ngSubmit)="display(reactform.value)">
+
+            <div class="form-group">
+
+                <label for="">NAME</label>
+
+                <input type="text" name="name" formControlName="n" class="form-control">
+
+                <span *ngIf="reactform.get('n')?.hasError('required')" style="color: rgb(253, 27, 2); font-size: 20px;">
+                     NAME MUST BE FILLED OUT !</span>
+            </div>
+
+            <div class="form-group">
+
+                <label for="">EMAIL</label>
+                <input type="email" name="email" formControlName="e" class="form-control" >
+            </div>
+
+            <div class="form-group">
+
+                <label for="">AGE</label>
+                <input type="number" name="age" formControlName="a" class="form-control" >
+            </div><br>
+
+            <input type="submit" value="SUBMIT" class="btn btn-outline-success form-control">
+
+        </form>
+    </div>
+    <br><br><br>
+
+
+
+
+
     
 </body>
 </html>

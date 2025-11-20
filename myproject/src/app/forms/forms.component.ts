@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-forms',
@@ -20,4 +21,22 @@ export class FormsComponent {
     
   }
 
+  reactform:FormGroup
+
+  display(data:any){
+    console.log('...........',data);
+    
+  }
+
+  constructor(private formbuild:FormBuilder){
+
+    this.reactform=formbuild.group({
+
+      n:['',Validators.required],
+      e:['',Validators.required],
+      a:['',Validators.required]
+
+
+    })
+  }
 }

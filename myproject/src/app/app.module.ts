@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FirstComponent } from './first/first.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SecondComponent } from './second/second.component';
 import { HighliteDirective } from './highlite.directive';
 import { ThirdComponent } from './third/third.component';
@@ -21,12 +21,14 @@ import { FormsComponent } from './forms/forms.component';
     HighliteDirective,
     ThirdComponent,
     SamplepipePipe,
-    FormsComponent
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

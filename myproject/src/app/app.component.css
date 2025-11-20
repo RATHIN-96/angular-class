@@ -1,0 +1,12 @@
+button a{
+    text-decoration: none;
+    color: rgb(3, 94, 2);
+    font-size: 20px;
+}
+button{
+    border-radius: 6px;
+    
+}
+button:hover{
+    background-color: #b4b0b0;
+}
