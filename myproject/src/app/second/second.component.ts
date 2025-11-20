@@ -16,11 +16,14 @@ export class SecondComponent {
     {id:5,name:'Ambu',place:'kozhikode'},
     {id:6,name:'Achu',place:'kozhikode'},
   ]
+
   d=6
+
   color1='blue'
   is_highlited=true;
   
   toogle(){
+
     this.is_highlited=!this.is_highlited
   }
 

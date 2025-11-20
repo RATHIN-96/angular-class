@@ -20,7 +20,9 @@
     <h1 style="text-align: center; color: darkgoldenrod;">STRUCTURAL DIRECTVES</h1>
 
     <div style="text-align: center; display: flex; justify-content: center;">
-        <table style="width: 30%; "border= "2px;">
+
+        <table class="table" style="width: 30%; "border= "2px;">
+
             <tr style="color: rgb(0, 0, 255);">
                 <th>last</th>
                 <th>first</th>
@@ -31,7 +33,9 @@
                 <th>Name</th>
                 <th>Place</th>
             </tr>
+
             <tr *ngFor="let i of user;index as in; even as e ; odd as o ; first as f; last as l ">
+
                 <td>{{l}}</td>
                 <td>{{f}}</td>
                 <td>{{o}}</td>
@@ -45,6 +49,7 @@
     </div>
 
     <div [ngSwitch]="d"  style="text-align: center; font-size: 30PX ; color: red; text-shadow: 1px 1px 2px black;">
+
         <h2 *ngSwitchCase="1">MONDAY</h2>
         <h2 *ngSwitchCase="2">TUESDAY</h2>
         <h2 *ngSwitchCase="3">WEDNESDAY</h2>
