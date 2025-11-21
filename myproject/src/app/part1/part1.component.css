@@ -1,0 +1,6 @@
+h1{
+    text-shadow: 2px 2px 4px rgb(55, 55, 55);
+}
+body{
+    background: linear-gradient(252deg,rgba(63, 251, 176, 1) 4%, rgba(29, 240, 240, 1) 100%);
+}

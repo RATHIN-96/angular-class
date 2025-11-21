@@ -11,6 +11,8 @@ import { HighliteDirective } from './highlite.directive';
 import { ThirdComponent } from './third/third.component';
 import { SamplepipePipe } from './samplepipe.pipe';
 import { FormsComponent } from './forms/forms.component';
+import { Part1Component } from './part1/part1.component';
+import { Part2Component } from './part2/part2.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FormsComponent } from './forms/forms.component';
     ThirdComponent,
     SamplepipePipe,
     FormsComponent,
+    Part1Component,
+    Part2Component,
   ],
   imports: [
     BrowserModule,
