@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1 style="text-align: center;color: red;">CRUD</h1>
+
+     <div class="container ">
+        <form #userForm="ngForm" (ngSubmit)="regData(userForm.value)">
+
+            <label for="">NAME</label><br>
+            <input type="text" name="name" class="form-control" [ngModel] required #nameRef="ngModel">
+
+
+            <label for="">EMAIL</label><br>
+            <input type="email" name="email" class="form-control" [ngModel] required >
+
+            <label for="">AGE</label><br>
+            <input type="number"  name="age" class="form-control" [ngModel] required> <br>
+
+            <input type="submit" value="SUBMIT" class=" btn btn-secondary form-control" [disabled]="userForm.invalid">
+        </form>
+        <br>
+
+        
+        
+
+
+    </div>
+
+
+    
+</body>
+</html>

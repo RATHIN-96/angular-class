@@ -1,0 +1,10 @@
+p{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.page-not-found{
+
+    margin-top: 200px;
+    text-align: center;
+}

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+ 
 
 @Injectable({
   providedIn: 'root'
@@ -19,5 +20,14 @@ export class MediatorService {
 
   sent_data(){
     return this.data_to_share
+  }
+
+  x:any=[]
+
+  registerData(params:any){
+
+    console.log(params);
+    return this.x=this.registerData
+    
   }
 }
