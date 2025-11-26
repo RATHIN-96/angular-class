@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
  
 
@@ -6,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class MediatorService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   data_to_share:any=[]
 
@@ -22,12 +23,20 @@ export class MediatorService {
     return this.data_to_share
   }
 
-  x:any=[]
+
 
   registerData(params:any){
 
     console.log(params);
-    return this.x=this.registerData
+    return this.http.post('http://127.0.0.1:8000/api/',params)
     
+  }
+  getRegData(){
+    return this.http.get('http://127.0.0.1:8000/api/')
+  }
+
+  delData(x:any){
+
+    return this.http.delete('http://127.0.0.1:8000/api/'+x+'/delete');
   }
 }

@@ -1,0 +1,24 @@
+table{
+    margin: 190px;
+    border-color: red;
+}
+
+table th{
+    background-color: aqua;
+}
+table td {
+    font-size: 15px;
+    background-color: rgb(229, 235, 248);
+    font-weight: 400
+}
+h1{
+    text-align: center;
+}
+
+body{
+  background-image: url('/assets/image.jpg');
+  background-size: cover;      /* fill screen */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;  /* optional (parallax effect) */
+}

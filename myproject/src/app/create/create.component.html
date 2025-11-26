@@ -12,14 +12,17 @@
         <form #userForm="ngForm" (ngSubmit)="regData(userForm.value)">
 
             <label for="">NAME</label><br>
-            <input type="text" name="name" class="form-control" [ngModel] required #nameRef="ngModel">
+            <input type="text" name="name" class="form-control" [ngModel] required #nameRef="ngModel"><br>
 
 
             <label for="">EMAIL</label><br>
-            <input type="email" name="email" class="form-control" [ngModel] required >
+            <input type="email" name="email" class="form-control" [ngModel] required ><br>
 
-            <label for="">AGE</label><br>
-            <input type="number"  name="age" class="form-control" [ngModel] required> <br>
+            <label for="">PLACE</label><br>
+            <input type="text"  name="place" class="form-control" [ngModel] required> <br>
+
+             <label for="">PHONE</label><br>
+            <input type="number"  name="phone" class="form-control" [ngModel] required> <br>
 
             <input type="submit" value="SUBMIT" class=" btn btn-secondary form-control" [disabled]="userForm.invalid">
         </form>

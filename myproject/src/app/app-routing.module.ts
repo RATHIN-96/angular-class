@@ -10,6 +10,7 @@ import { Part2Component } from './part2/part2.component';
 import { CreateComponent } from './create/create.component';
 import { MaterialComponent } from './material/material.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ReadComponent } from './read/read.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,10 @@ const routes: Routes = [
   {path:'part2',component:Part2Component},
   {path:'create',component:CreateComponent},
   {path:'material',component:MaterialComponent},
+  {path:'read',component:ReadComponent},
+
   {path:'**',component:NotFoundComponent},
+
 
 ];
 
