@@ -39,4 +39,22 @@ export class MediatorService {
 
     return this.http.delete('http://127.0.0.1:8000/api/'+x+'/delete');
   }
+
+  editId:number=0;
+
+  getEditId(x:any){
+    this.editId=x;
+    console.log(this.editId);
+    
+  }
+
+  getDatabyid(){
+    return this.http.get('http://127.0.0.1:8000/api/'+this.editId+'/')
+  }
+
+  update(x:any){
+
+    return this.http.patch('http://127.0.0.1:8000/api/'+ x.id +'/update',x)
+  }
+
 }

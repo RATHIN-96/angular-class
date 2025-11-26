@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MediatorService } from '../mediator.service';
-import { Route } from '@angular/router';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-read',
@@ -9,7 +9,7 @@ import { Route } from '@angular/router';
 })
 export class ReadComponent {
 
-  constructor (private mservice :MediatorService){}
+  constructor (private mservice :MediatorService,public rout:Router){}
 
   data:any=[]
 
@@ -39,4 +39,13 @@ export class ReadComponent {
     )
     
   }
+edit(x:any){
+  console.log(x);
+  this.mservice.getEditId(x);
+
+  this.rout.navigate(['edit'])
+  
+}
+
+
 }

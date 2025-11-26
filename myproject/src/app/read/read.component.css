@@ -11,14 +11,37 @@ table td {
     background-color: rgb(229, 235, 248);
     font-weight: 400
 }
+table td:hover{
+    background-color: rgb(193, 200, 215);
+}
 h1{
     text-align: center;
 }
 
 body{
-  background-image: url('/assets/image.jpg');
-  background-size: cover;      /* fill screen */
+  background-image: url('/src/assets/image.jpg');
+  background-size: cover;      
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;  /* optional (parallax effect) */
+  /* background-attachment: fixed;   */
+}
+
+.fa-pen-to-square{
+    font-size: 25px;
+    color: rgb(3, 221, 245);
+}
+
+
+.fa-trash{
+    font-size: 25px;
+    color: rgb(3, 223, 3);
+}
+
+.fa-trash:hover{
+    color: red;
+}
+
+.fa-pen-to-square:hover{
+    font-size: 25px;
+    color: rgb(3, 3, 245);
 }

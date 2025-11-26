@@ -21,6 +21,7 @@ import {HttpClient,HttpClientModule} from'@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReadComponent } from './read/read.component';
+import { EditComponent } from './edit/edit.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -41,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MaterialComponent,
     NotFoundComponent,
     ReadComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
